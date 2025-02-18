@@ -26,7 +26,7 @@ A Windows application for monitoring network traffic through DLL injection and W
 ## Requirements
 
 - Windows operating system
-- Visual Studio 2019 or later
+- Visual Studio 2022 or later
 - Platform: x64
 - MFC support
 - Windows SDK
