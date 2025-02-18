@@ -204,6 +204,7 @@
   <ItemGroup>
     <ClInclude Include="..\Common\constants.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="injector.h" />
     <ClInclude Include="LibInject.h" />
     <ClInclude Include="pch.h" />
     <ClInclude Include="Resource.h" />
@@ -212,6 +213,7 @@
     <ClInclude Include="UnlockerDlg.h" />
   </ItemGroup>
   <ItemGroup>
+    <ClCompile Include="injector.cpp" />
     <ClCompile Include="LibInject.cpp" />
     <ClCompile Include="pch.cpp">
       <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>

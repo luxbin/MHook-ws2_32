@@ -124,36 +124,12 @@ DWORD WINAPI MonitorProcessThread(LPVOID lpParam)
 
 	while (TRUE && !Attached_DLL)
 	{
-		int pid = GetProcId(LOCKDOWN_PROCESS_NAME);
+		int pid = GetProcId(L"Target1.exe");
 		if (pid != NULL) {
 
 			//OutputDebugStringA("=================== .exe");
 			InjectDLL(pid, dllPath.c_str());
 		}
-		
-		
-		pid = GetProcId(LOCKDOWN_PROCESS_NAME_1);
-		if (pid != NULL) {
-
-			//OutputDebugStringA("=================== LockDownBrowserOEM.exe");
-			InjectDLL(pid, dllPath.c_str());
-		}
-
-		pid = GetProcId(LOCKDOWN_PROCESS_NAME_2);
-		if (pid != NULL) {
-
-			//OutputDebugStringA("=================== LockDownBrowserLabOEM.exe");
-			InjectDLL(pid, dllPath.c_str());
-		}
-		
-		/*
-		pid = GetProcId(L"Guardian Browser.exe"); //ProctorU
-		if (pid != NULL) {
-
-			InjectDLL(pid, dllPath.c_str());
-		}
-		*/
-
 
 		//Sleep(50);
 		WaitForSingleObject(hEvent, 50);

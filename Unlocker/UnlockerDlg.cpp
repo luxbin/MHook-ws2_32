@@ -11,6 +11,7 @@
 #include "..\Common\constants.h"
 
 #include "LibInject.h"
+#include "injector.h"
 
 
 #ifdef _DEBUG
@@ -183,7 +184,7 @@ void CUnlockerDlg::OnBnClickedCancel()
 
 void CUnlockerDlg::OnBnClickedInject()
 {
-	HANDLE hThread = CreateThread(NULL, 0, MonitorProcessThread, (LPVOID)"", 0, NULL);
+	//HANDLE hThread = CreateThread(NULL, 0, MonitorProcessThread, (LPVOID)"", 0, NULL);
 
-
+	InjectDll("C:\\Target1.exe", "C:\\mydll.dll");
 }

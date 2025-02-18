@@ -42,6 +42,9 @@
     <ClInclude Include="..\Common\constants.h">
       <Filter>Common</Filter>
     </ClInclude>
+    <ClInclude Include="injector.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Unlocker.cpp">
@@ -54,6 +57,9 @@
       <Filter>Source Files</Filter>
     </ClCompile>
     <ClCompile Include="LibInject.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="injector.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
   </ItemGroup>
