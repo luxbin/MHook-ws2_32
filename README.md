@@ -91,7 +91,7 @@ A Windows application for monitoring network traffic through DLL injection and W
 
 ## License
 
-[Add your license information here]
+MIT License
 
 ## Disclaimer
 
